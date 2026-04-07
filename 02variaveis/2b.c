@@ -13,7 +13,7 @@ int main(void)
 	char fmt[NAME_LEN+1];
 
 	printf("Insira o seu nome: ");
-	sprintf(fmt, "%%%ds", NAME_LEN-1);
+	sprintf(fmt, "%%%ds", NAME_LEN);
 	scanf(fmt,nome);
 
 	if (strcmp("Ana",nome) == 0 || strcmp("João",nome) == 0)

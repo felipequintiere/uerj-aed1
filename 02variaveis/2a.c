@@ -11,7 +11,7 @@ int main(void)
 	char fmt[NAME_LEN+1];
 
 	printf("Insira o seu nome: ");
-	sprintf(fmt, "%%%ds", NAME_LEN-1);
+	sprintf(fmt, "%%%ds", NAME_LEN);
 	scanf(fmt,nome);
 
 	printf("Olá, %s!\n", nome);
@@ -33,8 +33,7 @@ se você fizer:
 
 resultará em um erro, porque:
 
-	ele pode tentar escrever 10 caracteres
-		\0
+	ele pode tentar escrever 10 caracteres somado do '\0',
 	total = 11 bytes, mas o array só tem 10
 */
 
