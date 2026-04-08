@@ -41,8 +41,14 @@ int main(void)
 
 	// para os múltiplos de 5
 	soma += (indice5*(indice5+1)/2)*5;
+	
 
-	printf("a soma dos múltiplos de 3 e 5 menores ou iguais a %d é %d\n",n,soma);
+	// PORÉM, É NECESSÁRIO EXCLUIR OS VALORES QUE SÃO CONTABILIZADOS
+	// MAIS DE UMA VEZ, NESSE CASO, OS MÚLTIPLOS DE 15:
+	long long indice15 = (n - (n % 15) ) / 15;
+	soma -= (indice15*(indice15+1)/2)*15;
+
+	printf("a soma dos múltiplos de 3 e 5 menores ou iguais a %lld é %lld\n",n,soma);
 
 	return 0;
 }
