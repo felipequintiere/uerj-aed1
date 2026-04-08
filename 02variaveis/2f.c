@@ -27,16 +27,8 @@ int main(void)
 
 	// é necessário remover os valores duplicados
 
-	for (int i=0; i<k; i++)
-	{
-		long long indice = (n - (n % v[i])) / v[i];
-		soma +=  indice * (indice+1) / 2 * v[i];
-	}
-
-	printf(
-		"a soma dos múltiplos dos %d números, múltiplos esses que são menores que %d\n"
-		"é: %lld\n",k,n,soma
-	);
+	// estava tentando fazer sem vetor
+	// fazer com vetor
 
 	return 0;
 }
