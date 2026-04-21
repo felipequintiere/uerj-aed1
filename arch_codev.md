@@ -39,8 +39,10 @@ obviamante é necessário ter o yay instalado, caso não tenha, siga as instruç
 <br>
 
 ## Segundo método (virtual environment):
-Antes de tudo, instale o pip: \
-`sudo pacman -S pip`
+Antes de tudo, instale o pip:
+``` bash
+sudo pacman -S pip
+```
 
 <br>
 
@@ -49,28 +51,40 @@ Ambientes virtuais do python possibilitam que pacotes sejam instalados isoladame
 
 <br>
 
-Vá até o diretório do codev e crie um ambiente virtual:\
-`python -m venv codev_env`
+Vá até o diretório do codev e crie um ambiente virtual:
+``` bash
+python -m venv codev_env
+```
 
-Em seguida, ative o ambiente (bash):\
-`source codev_env/bin/activate`
+Em seguida, ative o ambiente (bash):
+``` bash
+source codev_env/bin/activate
+```
 ou
-`. codev_env/bin/activate`\
+``` bash
+. codev_env/bin/activate
+```
 Note que o prompt será acrescido do nome do environment `(codev_env)`
 
 <br>
 
-Agora é possível instalar todas as bibliotecas suando o pip:\
-`pip install requests psutil colorama progress`
+Agora é possível instalar todas as bibliotecas suando o pip:
+``` bash
+pip install requests psutil colorama progress
+```
 <br>
 
-Finalmente podemos executar o Codev.py:\
-`python3 Codev.py`
+Finalmente podemos executar o Codev.py:
+``` bash
+python3 Codev.py`
+```
 
 <br>
 
-Para sair do ambiente, basta executar `deactivate` contra o shell:\
-`deactivate`
+Para sair do ambiente, basta executar `deactivate` contra o shell:
+``` bash
+deactivate
+```
 
 ---
 nota: esse guia foi escrito na data 21/04/2026, talvez o procedimento tenha mudando significativamente com o passar do tempo
