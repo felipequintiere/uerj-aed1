@@ -33,8 +33,8 @@ Instalar a biblioteca `python-progress` usando um AUR helper (yay):
 yay -S python-progress
 ```
 obviamante é necessário ter o yay instalado, caso não tenha, siga as instruções em https://github.com/jguer/yay \
-nota: yay é um AUR helper helper, serve para instalar aplicações do repositório comunitário do archlinux \
-nota: AUR - (Arch User Repository) 
+**nota:** yay é um AUR helper helper, serve para instalar aplicações do repositório comunitário do archlinux \
+**nota:** AUR - (Arch User Repository) 
 
 <br>
 
@@ -44,32 +44,32 @@ Antes de tudo, instale o pip: \
 
 <br>
 
-Ambientes virtuais do python possibilitam que pacotes sejam instalados isoladamente, de tal forma que conflitos de versionamento ou de ambiente sejam evitados.
-nota: para mais informações, leia https://wiki.archlinux.org/title/Python/Virtual_environment
+Ambientes virtuais do python possibilitam que pacotes sejam instalados isoladamente, de tal forma que conflitos de versionamento ou de ambiente sejam evitados. \
+**nota:** para mais informações, leia https://wiki.archlinux.org/title/Python/Virtual_environment
 
 <br>
 
-Vá até o diretório do codev e crie um ambiente virtual:
+Vá até o diretório do codev e crie um ambiente virtual:\
 `python -m venv codev_env`
 
-Em seguida, ative o ambiente (bash):
+Em seguida, ative o ambiente (bash):\
 `source codev_env/bin/activate`
 ou
-`. codev_env/bin/activate`
+`. codev_env/bin/activate`\
 Note que o prompt será acrescido do nome do environment `(codev_env)`
 
 <br>
 
-Agora é possível instalar todas as bibliotecas suando o pip:
+Agora é possível instalar todas as bibliotecas suando o pip:\
 `pip install requests psutil colorama progress`
 <br>
 
-Finalmente podemos executar o Codev.py:
+Finalmente podemos executar o Codev.py:\
 `python3 Codev.py`
 
 <br>
 
-Para sair do ambiente, basta executar `deactivate` contra o shell:
+Para sair do ambiente, basta executar `deactivate` contra o shell:\
 `deactivate`
 
 ---
