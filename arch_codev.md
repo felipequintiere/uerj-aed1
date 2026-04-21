@@ -22,22 +22,24 @@ No caso do archlinux, para a instalação das bibliotecas, é recomendado o uso 
 <br>
 
 Instalar as bibliotecas disponíveis no repostiório padrão:
-`sudo pacman -S python-requests python-psutil python-colorama`
+``` bash
+sudo pacman -S python-requests python-psutil python-colorama
+```
 
 <br>
 
-Instalar a biblioteca `python-progress` usando um AUR helper (yay) :
+Instalar a biblioteca `python-progress` usando um AUR helper (yay):
 ``` bash
 yay -S python-progress
 ```
-obviamante é necessário ter o yay instalado, caso não tenha, siga as instruções em https://github.com/jguer/yay\
-nota: yay é um AUR helper helper, serve para instalar aplicações pelo repositório comunitário do archlinux\
+obviamante é necessário ter o yay instalado, caso não tenha, siga as instruções em https://github.com/jguer/yay \
+nota: yay é um AUR helper helper, serve para instalar aplicações do repositório comunitário do archlinux \
 nota: AUR - (Arch User Repository) 
 
----
+<br>
 
 ## Segundo método (virtual environment):
-Antes de tudo, instale o pip:
+Antes de tudo, instale o pip: \
 `sudo pacman -S pip`
 
 <br>
