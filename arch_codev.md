@@ -1,4 +1,4 @@
-Instalação do codev no ArchLinux
+# Instalação do codev no ArchLinux
 
 Ao tentar executar o codev, caso as bibliotecas necessárias não estejam instaladas, uma mensagem similar à de baixo aparecerá. Veja que, na última linha, nos é mostrada uma das bibliotecas que não foi carregada, nesse caso, 'psutil'.
 ``` bash
@@ -23,14 +23,14 @@ No caso do archlinux, para a instalação das bibliotecas, é recomendado o uso 
 
 Instalar as bibliotecas disponíveis no repostiório padrão:
 ``` bash
-sudo pacman -S python-requests python-psutil python-colorama
+$ sudo pacman -S python-requests python-psutil python-colorama
 ```
 
 <br>
 
 Instalar a biblioteca `python-progress` usando um AUR helper (yay):
 ``` bash
-yay -S python-progress
+$ yay -S python-progress
 ```
 obviamante é necessário ter o yay instalado, caso não tenha, siga as instruções em https://github.com/jguer/yay \
 **nota:** yay é um AUR helper helper, serve para instalar aplicações do repositório comunitário do archlinux \
@@ -41,7 +41,7 @@ obviamante é necessário ter o yay instalado, caso não tenha, siga as instruç
 ## Segundo método (virtual environment):
 Antes de tudo, instale o pip:
 ``` bash
-sudo pacman -S pip
+$ sudo pacman -S pip
 ```
 
 <br>
@@ -53,16 +53,16 @@ Ambientes virtuais do python possibilitam que pacotes sejam instalados isoladame
 
 Vá até o diretório do codev e crie um ambiente virtual:
 ``` bash
-python -m venv codev_env
+$ python -m venv codev_env
 ```
 
 Em seguida, ative o ambiente (bash):
 ``` bash
-source codev_env/bin/activate
+$ source codev_env/bin/activate
 ```
 ou
 ``` bash
-. codev_env/bin/activate
+$ . codev_env/bin/activate
 ```
 Note que o prompt será acrescido do nome do environment `(codev_env)`
 
@@ -70,20 +70,20 @@ Note que o prompt será acrescido do nome do environment `(codev_env)`
 
 Agora é possível instalar todas as bibliotecas suando o pip:
 ``` bash
-pip install requests psutil colorama progress
+(codev_env) $ pip install requests psutil colorama progress
 ```
 <br>
 
 Finalmente podemos executar o Codev.py:
 ``` bash
-python3 Codev.py`
+(codev_env) $ python3 Codev.py`
 ```
 
 <br>
 
 Para sair do ambiente, basta executar `deactivate` contra o shell:
 ``` bash
-deactivate
+(codev_env) $ deactivate
 ```
 
 ---
