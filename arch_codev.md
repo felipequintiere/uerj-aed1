@@ -41,7 +41,7 @@ obviamante é necessário ter o yay instalado, caso não tenha, siga as instruç
 ## Segundo método (virtual environment):
 Antes de tudo, instale o pip:
 ``` bash
-$ sudo pacman -S pip
+$ sudo pacman -S python-pip
 ```
 
 <br>
