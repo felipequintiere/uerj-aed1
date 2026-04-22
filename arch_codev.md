@@ -68,7 +68,7 @@ Note que o prompt será acrescido do nome do environment `(codev_env)`
 
 <br>
 
-Agora é possível instalar todas as bibliotecas suando o pip:
+Agora é possível instalar todas as bibliotecas usando o pip:
 ``` bash
 (codev_env) $ pip install requests psutil colorama progress
 ```
