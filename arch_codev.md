@@ -76,7 +76,7 @@ Agora é possível instalar todas as bibliotecas usando o pip:
 
 Finalmente podemos executar o Codev.py:
 ``` bash
-(codev_env) $ python3 Codev.py`
+(codev_env) $ python3 Codev.py
 ```
 
 <br>
