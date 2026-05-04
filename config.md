@@ -1,6 +1,6 @@
 # (minha) Configuração do codev
 
-NOTA: Estou usando um virtual environment para executar o codev (veja ./arch_codev_install.md)
+NOTA: Estou usando um virtual environment para executar o codev ([veja arch_codev_install.md](./arch_codev_install.md))
 
 ---
 
@@ -9,7 +9,7 @@ NOTA: Estou usando um virtual environment para executar o codev (veja ./arch_cod
 
 para executar o codev sem chamar o python explicitamente (como `python3 ./Codev.py`), abra o arquivo `Codev.py` e adicione, na primeira linha do arquivo, o shebang abaixo:
 ``` bash
-#!/usr/bin/env python3' no Codev.py
+#!/usr/bin/env python3'
 ```
 nota: em bash, a sequência (#!) diz para o sistema operacional qual interpretador usar para executar o script
 
