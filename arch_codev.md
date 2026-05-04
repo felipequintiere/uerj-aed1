@@ -15,11 +15,9 @@ Em uma instalação recente do sistema, as seguintes bibliotecas precisam ser in
 
 `python-requests`, `python-psutil`, `python-colorama` e `python-progress`
 
-<br>
-
 No caso do Arch Linux, para a instalação das bibliotecas, é recomendado o uso do repositório padrão [core/extra]. Porém, apenas os primeiros três pacotes estão presentes no repositório padrão e, sem o	`python-progress`, não há como executar o Codev.
 
-## Primeiro método:
+## Primeiro método: (yay)
 Use um AUR helper para instalar o python-progress
 
 <br>
@@ -57,6 +55,8 @@ Vá até o diretório do codev e crie um ambiente virtual:
 ``` bash
 $ python -m venv codev_env
 ```
+
+<br>
 
 Em seguida, ative o ambiente (bash):
 ``` bash
