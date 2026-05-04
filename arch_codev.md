@@ -1,53 +1,55 @@
-# Instalação do codev no ArchLinux
+# Instalação do codev no *Arch Linux*
 
-Ao tentar executar o codev, caso as bibliotecas necessárias não estejam instaladas, uma mensagem similar à de baixo aparecerá. Veja que, na última linha, nos é mostrada uma das bibliotecas que não foi carregada, nesse caso, 'psutil'.
+Ao tentar executar o codev, caso as bibliotecas necessárias não estejam instaladas, uma mensagem similar à de baixo aparecerá.
 ``` bash
-[~/a/.codev] $ python3 Codev.py
+[~/a/server/.codev] $ python3 Codev.py
 Traceback (most recent call last):
-  File "/home/rho/a/.codev/Codev.py", line 15, in <module>
+  File "/home/rho/a/server/.codev/Codev.py", line 15, in <module>
     from progress.bar import FillingSquaresBar
 ModuleNotFoundError: No module named 'psutil'
 ```
+Veja que, na última linha, nos é mostrada uma das bibliotecas que não foi encontrada, nesse caso, 'psutil'.
+
 <br>
-Em uma instalação recente do archlinux, as seguintes bibliotecas precisam ser instaladas:
+Em uma instalação recente do sistema, as seguintes bibliotecas precisam ser instaladas:
 
 `python-requests`, `python-psutil`, `python-colorama` e `python-progress`
 
 <br>
 
-## Primeiro método:
+No caso do Arch Linux, para a instalação das bibliotecas, é recomendado o uso do repositório padrão [core/extra]. Porém, apenas os primeiros três pacotes estão presentes no repositório padrão e, sem o	`python-progress`, não há como executar o Codev.
 
-No caso do archlinux, para a instalação das bibliotecas, é recomendado o uso do repositório padrão [core/extra]. Porém, apenas os primeiros três pacotes estão presentes no repositório padrão e, sem o python-progress, não há como executar o Codev. Para contornar esse problema, use um AUR helper para instalar o python-progress; o processo está descrito abaixo:
+## Primeiro método:
+Use um AUR helper para instalar o python-progress
 
 <br>
 
-Instalar as bibliotecas disponíveis no repostiório padrão:
+Instale as bibliotecas disponíveis no repositório padrão:
 ``` bash
 $ sudo pacman -S python-requests python-psutil python-colorama
 ```
 
 <br>
 
-Instalar a biblioteca `python-progress` usando um AUR helper (yay):
+Instale a biblioteca `python-progress` usando um AUR helper (yay):
 ``` bash
 $ yay -S python-progress
 ```
-obviamante é necessário ter o yay instalado, caso não tenha, siga as instruções em https://github.com/jguer/yay \
-**nota:** yay é um AUR helper helper, serve para instalar aplicações do repositório comunitário do archlinux \
-**nota:** AUR - (Arch User Repository) 
+obviamente é necessário ter o yay instalado, caso não tenha, siga as instruções em https://github.com/jguer/yay \
+**nota:** yay é um AUR (Arch User Repository) helper, serve para instalar aplicações do repositório comunitário do Arch Linux \
 
 <br>
 
 ## Segundo método (virtual environment):
-Antes de tudo, instale o pip:
-``` bash
-$ sudo pacman -S python-pip
-```
+Ambientes virtuais do python possibilitam que pacotes sejam instalados isoladamente, de tal forma que conflitos de versionamento ou de ambiente sejam evitados.\
+**nota:** para mais informações, leia https://wiki.archlinux.org/title/Python/Virtual_environment
 
 <br>
 
-Ambientes virtuais do python possibilitam que pacotes sejam instalados isoladamente, de tal forma que conflitos de versionamento ou de ambiente sejam evitados. \
-**nota:** para mais informações, leia https://wiki.archlinux.org/title/Python/Virtual_environment
+Instale o pip:
+``` bash
+$ sudo pacman -S python-pip
+```
 
 <br>
 
@@ -87,5 +89,5 @@ Para sair do ambiente, basta executar `deactivate` contra o shell:
 ```
 
 ---
-nota: esse guia foi escrito na data 21/04/2026, talvez o procedimento tenha mudando significativamente com o passar do tempo
+nota: esse texto foi escrito na data 21/04/2026, talvez o procedimento tenha mudado significativamente com o passar do tempo
 
