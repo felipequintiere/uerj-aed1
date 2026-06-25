@@ -33,8 +33,8 @@ Instale a biblioteca `python-progress` usando um AUR helper (yay):
 ``` bash
 $ yay -S python-progress
 ```
-obviamente é necessário ter o yay instalado, caso não tenha, siga as instruções em https://github.com/jguer/yay \
-**nota:** yay é um AUR (Arch User Repository) helper, serve para instalar aplicações do repositório comunitário do Arch Linux \
+obviamente é necessário ter o yay instalado, caso não tenha, siga as instruções em https://github.com/jguer/yay  
+**nota:** yay é um AUR (Arch User Repository) helper, serve para instalar aplicações do repositório comunitário do Arch Linux  
 
 <br>
 
