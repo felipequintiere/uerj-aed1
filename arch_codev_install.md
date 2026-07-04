@@ -33,14 +33,13 @@ Instale a biblioteca `python-progress` usando um AUR helper (yay):
 ``` bash
 $ yay -S python-progress
 ```
-obviamente é necessário ter o yay instalado, caso não tenha, siga as instruções em https://github.com/jguer/yay  
-**nota:** yay é um AUR (Arch User Repository) helper, serve para instalar aplicações do repositório comunitário do Arch Linux  
+**nota:** obviamente é necessário ter o yay instalado, caso não o tenha, siga as instruções em https://github.com/jguer/yay  
 
 <br>
 
 ## Segundo método (virtual environment):
 Ambientes virtuais do python possibilitam que pacotes sejam instalados isoladamente, de tal forma que conflitos de versionamento ou de ambiente sejam evitados.\
-**nota:** para mais informações, leia https://wiki.archlinux.org/title/Python/Virtual_environment
+**nota:** veja https://wiki.archlinux.org/title/Python/Virtual_environment
 
 <br>
 
@@ -87,7 +86,4 @@ Para sair do ambiente, basta executar `deactivate` contra o shell:
 ``` bash
 (codev_env) $ deactivate
 ```
-
----
-nota: esse texto foi escrito na data 21/04/2026, talvez o procedimento tenha mudado significativamente com o passar do tempo
 

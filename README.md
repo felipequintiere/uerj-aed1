@@ -11,7 +11,7 @@ para executar o codev sem chamar o python explicitamente (como `python3 ./Codev.
 ``` bash
 #!/usr/bin/env python3
 ```
-nota: a sequência `#!` é utilizada para dizer ao kernel qual interpretador deve ser utilizada na execuçao do script que o segue 
+nota: a sequência `#!` é utilizada para dizer ao kernel qual interpretador deve ser utilizado na execuçao do script que o segue 
 
 depois, dê permissão de execução ao arquivo `Codev.py`:
 ``` bash
