@@ -35,13 +35,13 @@ Instale a biblioteca `python-progress` usando um AUR helper (yay):
 ``` bash
 $ yay -S python-progress
 ```
-Nota: caso o yay não esteja instalado, consulte: https://github.com/jguer/yay  
+> nota: caso o yay não esteja instalado, consulte: https://github.com/jguer/yay  
 
 
 
 ## Segundo método (virtual environment):
 Ambientes virtuais do python possibilitam que pacotes sejam instalados isoladamente, de tal forma que conflitos de versionamento ou de ambiente sejam evitados.\
-**nota:** veja https://wiki.archlinux.org/title/Python/Virtual_environment  
+> nota: consulte a documentação da ArchWiki: https://wiki.archlinux.org/title/Python/Virtual_environment.
 
 Instale o pip:
 ``` bash
