@@ -19,7 +19,7 @@ depois, dê permissão de execução ao arquivo `Codev.py`:
 chmod u+x ./Codev.py
 ```
 
-<br>
+---
 
 escrevi um shell script que abre outro terminal, inicializa o `tmux`
 (multiplexer) e executa o `codev`
@@ -43,6 +43,7 @@ nohup xterm -e tmux new \
 > nota: substitua `xterm` pelo seu terminal de preferência (confira se
 a flag `-e` precisa ser alterada)
 
+---
 
 adicionei o script anterior ao `$PATH` para que seja possível chamá-lo
 de qualquer local do CLI
