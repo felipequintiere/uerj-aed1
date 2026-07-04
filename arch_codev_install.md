@@ -8,19 +8,21 @@ Traceback (most recent call last):
     from progress.bar import FillingSquaresBar
 ModuleNotFoundError: No module named 'psutil'
 ```
-Veja que, na última linha, nos é mostrada uma das bibliotecas que não foi encontrada, nesse caso, 'psutil'.
+Veja que, na última linha, nos é mostrada uma das bibliotecas que não foi encontrada: 'psutil'.  
 
-<br>
 Em uma instalação recente do sistema, as seguintes bibliotecas precisam ser instaladas:
 
-`python-requests`, `python-psutil`, `python-colorama` e `python-progress`
+- `python-requests`  
+- `python-psutil`  
+- `python-colorama`  
+- `python-progress`
 
-No caso do Arch Linux, para a instalação das bibliotecas, é recomendado o uso do repositório padrão [core/extra]. Porém, apenas os primeiros três pacotes estão presentes no repositório padrão e, sem o	`python-progress`, não há como executar o Codev.
+Recomenda-se instalar as bibliotecas por meio dos repositórios oficiais (core e extra). No entanto, apenas os três primeiros pacotes estão disponíveis nesses repositórios. Como o pacote `python-progress` não faz parte dos repositórios padrão, sua instalação é necessária por outro meio para que o Codev possa ser executado.  
+
+
 
 ## Primeiro método: (yay)
-Use um AUR helper para instalar o python-progress
-
-<br>
+Use um AUR helper para instalar o python-progress  
 
 Instale as bibliotecas disponíveis no repositório padrão:
 ``` bash
@@ -33,15 +35,13 @@ Instale a biblioteca `python-progress` usando um AUR helper (yay):
 ``` bash
 $ yay -S python-progress
 ```
-**nota:** obviamente é necessário ter o yay instalado, caso não o tenha, siga as instruções em https://github.com/jguer/yay  
+Nota: caso o yay não esteja instalado, consulte: https://github.com/jguer/yay  
 
-<br>
+
 
 ## Segundo método (virtual environment):
 Ambientes virtuais do python possibilitam que pacotes sejam instalados isoladamente, de tal forma que conflitos de versionamento ou de ambiente sejam evitados.\
-**nota:** veja https://wiki.archlinux.org/title/Python/Virtual_environment
-
-<br>
+**nota:** veja https://wiki.archlinux.org/title/Python/Virtual_environment  
 
 Instale o pip:
 ``` bash
@@ -73,6 +73,7 @@ Agora é possível instalar todas as bibliotecas usando o pip:
 ``` bash
 (codev_env) $ pip install requests psutil colorama progress
 ```
+
 <br>
 
 Finalmente podemos executar o Codev.py:
