@@ -26,8 +26,11 @@ int main(void)
 
 	// \(\sum_{i=1}^k (3.i) = 3.\sum{i=1}^k(i)\)
 	// = 3 . \frac{n(n+1)}{2}
-
 	
+	// veja que a soma dos múltimos de três de 0 até n equivale a
+	// 3 vezes a soma dos números de 0 ao (maior número multiplo de
+	// 3 dividido por 3) menor ou igual a n
+	//
 	// basta então dividr (n-resto_div_3) por 3 para encontrar
 	// o limite superior do somatório
 
@@ -48,7 +51,8 @@ int main(void)
 	long long indice15 = (n - (n % 15) ) / 15;
 	soma -= (indice15*(indice15+1)/2)*15;
 
-	printf("a soma dos múltiplos de 3 e 5 menores ou iguais a %lld é %lld\n",n,soma);
+	printf("a soma dos múltiplos de 3 e 5 menores ou iguais a "
+			"%lld é %lld\n",n,soma);
 
 	return 0;
 }

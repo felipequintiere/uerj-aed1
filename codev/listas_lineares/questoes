@@ -5,7 +5,11 @@
 refazer a 7
 refazer a 9 com uma função auxiliar
 
+14
+15: resolução confusa
+
 -----
 
 NOTAS:
 10: o exercício já vem com a função Insere(), acerca disso, essa função põe o novo nó antes do primeiro nó da lista, fazendo com que o novo nó sempre entre na posição de primeiro nó da lista
+

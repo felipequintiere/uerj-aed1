@@ -10,8 +10,7 @@ int main(void)
 
 	scanf("%d",&n);	
 	
-	for (; n>2; n--)
-	{
+	for (; n > 2; n--) {
 		f2 = f1+f2;
 		f1 = f2-f1;
 	}

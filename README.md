@@ -1,4 +1,4 @@
-# (minha) Configuração do codev
+# (minha) configuração do codev
 
 Estou usando um virtual environment para executar o codev,
 confira [arch_codev_install.md](./arch_codev_install.md)

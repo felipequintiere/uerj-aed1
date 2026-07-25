@@ -1,14 +1,12 @@
 #include <stdio.h>
 #include <string.h>
 
-typedef struct
-{
+typedef struct {
 	char nome[5];
 	int idade;
 } Aluno;
 
-typedef struct No
-{
+typedef struct No {
 	int turma;
 	Aluno *aluno;
 	struct No *prox;

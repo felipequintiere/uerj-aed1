@@ -15,6 +15,10 @@ int main(void)
 	scanf(fmt,nome);
 
 	printf("Olá, %s!\n", nome);
+
+	return 0;
+}
+
 /* man 3 sscanf
        s      Matches  a  sequence of non-white-space characters; the
               next pointer must be a pointer to the  initial  element
@@ -23,19 +27,15 @@ int main(void)
               which  is  added automatically.  The input string stops
               at white space or at the maximum field width, whichever
               occurs first.
-*/
 
-/*
-se você fizer:
 
+
+NOTA: 
 	char nome[10];
 	scanf("%10s", nome);
 
-resultará em um erro, porque:
+possivelmente resultará em um erro, veja:
 
-	ele pode tentar escrever 10 caracteres somado do '\0',
-	total = 11 bytes, mas o array só tem 10
+	dependendo da entrada, o sprintf escreve 10 caracteres mais o '\0';
+	ou seja, 11 bytes, mas o array apenas suporta 10!
 */
-
-	return 0;
-}

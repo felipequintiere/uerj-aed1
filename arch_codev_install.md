@@ -1,4 +1,4 @@
-# Instalação do codev no *Arch Linux*
+# instalação do codev no *Arch Linux*
 
 Ao tentar executar o codev, caso as bibliotecas necessárias não estejam instaladas, uma mensagem similar à de baixo aparecerá.
 ``` bash
