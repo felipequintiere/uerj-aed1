@@ -28,7 +28,7 @@ escrevi um shell script que abre outro terminal, inicializa o `tmux`
 chmod u+x codev.sh
 ```
 
-conteúdo do script `cat ./codev`
+conteúdo do script
 ``` bash
 #!/bin/bash
 
