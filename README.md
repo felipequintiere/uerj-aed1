@@ -49,7 +49,7 @@ adicionei o script anterior ao `$PATH` para que seja possível chamá-lo
 de qualquer local do CLI
 ``` bash
 mkdir ~/bin
-mv ./codev.sh ~/bin/
+mv ./codev.sh ~/bin
 ```
 
 para que a pasta seja adiciona ao `$PATH`, basta inserir
